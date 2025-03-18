@@ -148,10 +148,21 @@
     left: 25%;
 }
 
-.highlight {
+.title {
     color: var(--var--primary-blue);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.highlight {
     font-weight: 600;
     font-size: 1rem;
+}
+
+.highlight-2 {
+    font-weight: 600;
+    font-size: 2.2rem;
 }
 
 /* search */
@@ -204,4 +215,86 @@
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 15px;
+}
+
+/* about */
+.about-us {
+    width: 80%;
+    margin: 10% auto;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.about-us-img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 25px;
+    position: relative;
+    /* Ensure proper positioning for child elements */
+}
+
+.about-left {
+    position: relative;
+    /* Ensure that .awards is positioned relative to this */
+}
+
+.about-left .awards {
+    position: absolute;
+    bottom: -50px;
+    /* Changed from -50% to -50px to avoid extreme shifts */
+    left: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.37);
+    background-color: var(--var--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px 35px;
+    row-gap: 10px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.about-left .awards p {
+    line-height: 1.4;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.about-right button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: var(--var--primary-blue);
+}
+
+
+.about-right .service {
+    display: flex;
+    column-gap: 30px;
+    margin: 20px 0;
+}
+
+.service :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.service :last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 20px;
 }
